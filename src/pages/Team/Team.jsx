@@ -54,7 +54,11 @@ const people = [
             <div className="shape"></div>
             <div className="text">Meet Our <span>Team</span></div>
           </div>
-          <TeamCard />
+          <div className="cards-leader">
+            <TeamCard />
+            <TeamCard />
+            <TeamCard />
+          </div>
         </TeamWrapper>
       </>
     )
