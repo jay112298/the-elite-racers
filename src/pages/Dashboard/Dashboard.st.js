@@ -2,16 +2,21 @@ import styled from 'styled-components'
 
 export const DashContainer = styled.div`
 
-
+  
   min-height: 100vh;
   width: 100vw;
   display: flex;
 
   .sidebar {
 
-    height: 100vh;
-    width: calc(100vw*1/6);
-    background-color: #F6F6F6;
+    height: 60vh;
+    position: absolute;
+    top: 20vh;
+    bottom: 20vh;
+    left: 0;
+    width: 4rem;
+    border-radius: 2.93rem;
+    background-color: #602BF8;
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
     
@@ -27,12 +32,16 @@ export const DashContainer = styled.div`
     .tabs {
 
       margin-top: 2.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
       li {
 
-        margin-left: 2rem;
+        
         margin-bottom: 1rem;
-        color: var(--dmv-grey-text, #878787);
+        color: var(--dmv-grey-text, #FFFFFF);
         font-family: 'Manrope', sans-serif;
         font-size: 1.0rem;
         font-style: normal;
@@ -41,16 +50,16 @@ export const DashContainer = styled.div`
         gap: 0.6rem;
         cursor: pointer;
         display: flex;
-        width: 12.5rem;
-        padding: 0.25rem 0.25rem 0.25rem 0rem;
-        /* flex-direction: column; */
-        justify-content: flex-start;
-        align-items: center;
 
         .icon {
           display: flex;
           align-items: center;
           justify-content: center;
+
+          .icon-svg {
+            height: 2rem;
+            width: 2rem;
+          }
         }
 
         .label {
@@ -62,7 +71,7 @@ export const DashContainer = styled.div`
       }
 
       .active {
-        color: #6956E5;
+        color: #000;
         font-family: 'Manrope', sans-serif;
         font-size: 1.125rem;
         font-style: normal;
@@ -73,7 +82,7 @@ export const DashContainer = styled.div`
   }
 
   .main-content {
-    width: calc(100vw*5/6);
+    width: calc(100vw);
     .top-navbar {
       padding: 1rem;
       display: flex;
@@ -112,6 +121,12 @@ export const DashContainer = styled.div`
           margin: 2.5rem;
         }
       }
+    }
+
+    .content {
+
+      margin-left: 5rem;
+
     }
   }
 

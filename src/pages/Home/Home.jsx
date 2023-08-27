@@ -1,18 +1,19 @@
 import { useState } from 'react'
 import eliteLogo from '../../assets/the-elite-racers.svg'
-import './Home.css'
+// import './Home.css'
+import { AppWrap } from './Home.st'
 
 function Home() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
+    <AppWrap>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={eliteLogo} className="logo" alt="Vite logo" />
         </a>
       </div>
-      <h1>The Elite Racers</h1>
+      <h1 className='title'>The Elite Racers</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           Launching Soon {/*{count} */}
@@ -21,7 +22,7 @@ function Home() {
       <p className="read-the-docs">
         Stay tuned to learn more
       </p>
-    </div>
+    </AppWrap>
   )
 }
 

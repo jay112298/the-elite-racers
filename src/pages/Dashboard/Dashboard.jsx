@@ -29,19 +29,20 @@ import {
   AiOutlineQuestionCircle,
   AiOutlineCode 
 } from 'react-icons/ai'; // Import other icons as neede
+import {MdOutlinePersonSearch} from 'react-icons/md'
 
 const tabs = [
-  { label: "Home", icon: <AiOutlineHome /> },
-  { label: "Finances", icon: <AiOutlineDollar /> },
-  { label: "Inventory", icon: <AiOutlineShop /> },
-  { label: "Task", icon: <AiOutlineCheckSquare /> },
-  { label: "Communication", icon: <AiOutlineMail /> },
-  { label: "Recruitment", icon: <AiOutlineCalendar /> },
-  { label: "Documents", icon: <AiOutlineFileText /> },
-  { label: "Resources", icon: <AiOutlineDatabase /> },
-  { label: "Event", icon: <AiOutlineBook /> },
-  { label: "Knowledge", icon: <AiOutlineQuestionCircle /> },
-  { label: "Code", icon: <AiOutlineCode /> },
+  { label: "Home", icon: <AiOutlineHome className='icon-svg'/> },
+  { label: "Finances", icon: <AiOutlineDollar className='icon-svg'/> },
+  { label: "Inventory", icon: <AiOutlineShop className='icon-svg'/> },
+  { label: "Task", icon: <AiOutlineCheckSquare className='icon-svg'/> },
+  //{ label: "Communication", icon: <AiOutlineMail className='icon-svg'/> },
+  { label: "Recruitment", icon: <MdOutlinePersonSearch className='icon-svg'/> },
+  { label: "Documents", icon: <AiOutlineFileText className='icon-svg'/> },
+  // { label: "Resources", icon: <AiOutlineDatabase className='icon-svg'/> },
+  { label: "Event", icon: <AiOutlineBook className='icon-svg'/> },
+  // { label: "Knowledge", icon: <AiOutlineQuestionCircle className='icon-svg'/> },
+  // { label: "Code", icon: <AiOutlineCode className='icon-svg'/> },
 ];
 
 
@@ -50,7 +51,7 @@ const componentMap = {
   Finances: Finances,
   Inventory: Inventory,
   Task: Task,
-  Communication: Communication,
+  // Communication: Communication,
   Recruitment: Recruitment,
   Documents: Documents,
   Resources: Resources,
@@ -64,7 +65,7 @@ const Dashboard = () => {
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
-    console.log(tab)
+    console.log(tab);
   };
 
   const ActiveComponent = componentMap[activeTab];
@@ -75,7 +76,7 @@ const Dashboard = () => {
   return (
     <DashContainer>
       <div className="sidebar">
-        <div className="logo"><img src={EliteLogo} className="logo" alt="Vite logo" /></div>
+        {/* <div className="logo"><img src={EliteLogo} className="logo" alt="Vite logo" /></div> */}
         <ul className="tabs">
           {tabs.map((tab) => (
             <li
@@ -84,7 +85,7 @@ const Dashboard = () => {
               onClick={() => handleTabClick(tab.label)}
             >
               <div className="icon">{tab.icon}</div>
-              <div className="label">{tab.label}</div>
+              {/* <div className="label">{tab.label}</div> */}
             </li>
           ))}
         </ul>

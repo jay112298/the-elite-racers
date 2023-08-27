@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-import './Signup.css'
+// import './Signup.css'
 import axios from 'axios'; // Import the axios library
+import { SignupForm } from './Signup.st';
 
 function Signup() {
     const [signupSuccess, setSignupSuccess] = useState(false);
@@ -71,7 +72,7 @@ function Signup() {
         sendData(); // Call the inner async function
     };
     return (
-        <div>
+        <SignupForm>
             <h2>Sign Up</h2>
             {signupSuccess && <div className="success-ribbon">{signUpMessage}</div>}
             <form onSubmit={handleSubmit}>
@@ -128,17 +129,17 @@ function Signup() {
                     <label>Department:</label>
                     <select name="department" value={formData.department} onChange={handleInputChange}>
                         <option value="Aero">Aero</option>
-                        <option value="chassis">Chassis</option>
-                        <option value="powertrain">Powertrain</option>
-                        <option value="suspension">Suspension</option>
-                        <option value="vehicle dynamics">Vehicle Dynamics</option>
+                        <option value="Chassis">Chassis</option>
+                        <option value="Powertrain">Powertrain</option>
+                        <option value="Suspension">Suspension</option>
+                        <option value="Vehicle Dynamics">Vehicle Dynamics</option>
                     </select>
                 </div>
                 <div>
                     <button type='submit'>Sign Up</button>
                 </div>
             </form>
-        </div>
+        </SignupForm>
     );
 }
 

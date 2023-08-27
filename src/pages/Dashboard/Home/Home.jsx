@@ -1,8 +1,17 @@
 import React from 'react'
+import FundsCard from '../../../components/DashCard/FundsCard'
+import RecruitmentsCard from '../../../components/DashCard/RecruitmentsCard'
+import ApplicationsCard from '../../../components/DashCard/ApplicationsCard'
+import { Content } from './Home.st'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <Content>
+      <FundsCard title="Members" footLink="/funds/add-transaction"/>
+      <FundsCard title="Funds" footLink="/funds/add-transaction"/>
+      <RecruitmentsCard />
+      <ApplicationsCard />
+    </Content>
   )
 }
 

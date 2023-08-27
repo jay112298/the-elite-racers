@@ -5,7 +5,7 @@ import { Card } from '../../../components/Finance/Card1.st.js'
 const Finances = () => {
   return (
     <FinContainer>
-      <Card />
+      Finances
     </FinContainer>
   )
 }
