@@ -4,8 +4,32 @@
 }
 
 @font-face {
-  font-family: 'CustomFont';
+  font-family: 'Rugen';
   src: url('../fonts/RugenExpandedPersonalUse.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+}
+
+body {
+  font-size: 13.66px;
+  font-size: 1vw;
+}
+
+
+@media screen and (min-width: 1920px) {
+  body {
+    font-size: 19.2px;
+  }
+}
+
+@media screen and (min-width: 2800px) {
+  body {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 3800px) {
+  body {
+    font-size: 38px;
+  }
 }
