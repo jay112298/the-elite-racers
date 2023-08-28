@@ -3,6 +3,7 @@ import { TeamWrapper } from './Team.st'
 import Navbar from "../../components/Navbar/Navbar"
 import TeamCard from '../../components/Team/TeamCard'
 import MemberCard from '../../components/Team/MemberCard'
+import Footer from "../../components/Footer/Footer"
 import qualitiesSvg from "../../assets/qualities.svg"
 import driftShape from "../../assets/drift-shape.svg"
 import exploreTeam from "../../assets/explore-team.svg"
@@ -140,6 +141,7 @@ const people = [
           </div>
 
         </TeamWrapper>
+        <Footer />
       </>
     )
   }
