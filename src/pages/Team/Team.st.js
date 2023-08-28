@@ -72,6 +72,10 @@ export const TeamWrapper = styled.div`
                 }
             }
 
+            .left {
+                margin-left: 3.31rem;
+            }
+
             .right {
                 align-items: end;
             }
@@ -80,11 +84,31 @@ export const TeamWrapper = styled.div`
         }
     }
 
+    .explore-team {
+        position: absolute;
+        height: 245px;
+        width: 245px;
+        top: calc(49.6rem + 114.36px);
+        left: 43.12rem;
+        z-index: 2;
+        border-radius: 50rem;
+        box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+        background-color: #FFF;
+
+        img {
+        margin: 1rem 1rem;
+
+        }
+
+    }
+
     .members-wrapper {
+        margin-top: 1.98rem;
         width: 90.87302rem;
         height: 132.67196rem;
         border-radius: 3.96825rem;
-        background: linear-gradient(180deg, #FF3A00 0%, rgba(255, 58, 0, 0.00) 100%);
+        background: #FFF ; /*linear-gradient(180deg, #FF3A00 0%, rgba(255, 58, 0, 0.00) 100%);*/
+        box-shadow: 0px -4px 20px -5px rgba(0, 0, 0, 0.25);
 
         .top {
             display: flex;
@@ -114,12 +138,24 @@ export const TeamWrapper = styled.div`
                         line-height: 92.523%;
                         text-transform: uppercase;
                     }
+
+                    img {
+                        width: 6.08466rem;
+                        height: 2.77778rem;
+                        flex-shrink: 0;
+                    }
                 }
             }
 
             .right {
                 margin: 2.18rem 3.37rem;
             }
+        }
+
+        .cards-member {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding: 0 2.2rem;
         }
     }
 `
