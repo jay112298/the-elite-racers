@@ -3,47 +3,123 @@ import styled from 'styled-components'
 
 export const TeamWrapper = styled.div`
 
-    width: 94%;
-    margin: 0 3%;
+    width: 90rem;
+    margin: 0 5rem;
 
     .header {
-        
+        margin: 1.52rem 0%;
+        font-family: 'Rugen', sans-serif;
+
         display: flex;
         align-items: baseline;
         justify-content: flex-start;
-        margin: 2% 0;
+        border-bottom: 1px solid black;
 
-        border-bottom: 0.06614rem solid black;
         .shape{
             width: 3.50529rem;
             height: 2.51323rem;
             flex-shrink: 0;
             background: #FF3A00;
-            
         }
 
-        .text {
+        .text{
             color: #000;
-            font-family: 'Rugen', sans-serif;
             font-size: 3.96825rem;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+        }
 
-            span{
-                color: #FF3A00;
-                font-size: 3.96825rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
+    }
+    .leaders-wrapper {
+        height: 47.28836rem;
+        border-radius: 0rem 0rem 3.96825rem 3.96825rem;
+        background: #FFF;
+        box-shadow: 0px 4px 20px -5px rgba(0, 0, 0, 0.25);
+    
+
+
+        .cards-leader {
+            display: flex;
+            justify-content: space-around;
+            gap: 4.7rem;
+
+        }
+
+        .statements {
+            display: flex;
+            justify-content: space-between;
+            color: #000;
+            font-family: 'Inter', sans-serif;
+            font-size: 3.76984rem;
+            font-style: italic;
+            font-weight: 900;
+            line-height: 92.523%;
+            text-transform: uppercase;
+
+            .left, .right {
+                width: 34.8545rem;
+                margin-top: 3.51rem;
+
+                span {
+                    color: #FF3A00;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 3.76984rem;
+                    font-style: italic;
+                    font-weight: 900;
+                    line-height: 92.523%; /* 3.48796rem */
+                    text-transform: uppercase;
+                }
             }
+
+            .right {
+                align-items: end;
+            }
+
+            
         }
     }
 
-    .cards-leader{
-        display: flex;
-        align-items: center;
-        gap: 3%;
-    }
+    .members-wrapper {
+        width: 90.87302rem;
+        height: 132.67196rem;
+        border-radius: 3.96825rem;
+        background: linear-gradient(180deg, #FF3A00 0%, rgba(255, 58, 0, 0.00) 100%);
 
+        .top {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                width: 35.25132rem;
+                height: 8.46561rem;
+                margin: 2.18rem 3.37rem;
+                flex-shrink: 0;
+                color: #000;
+                font-family: 'Inter', sans-serif;
+                font-size: 3.76984rem;
+                font-style: italic;
+                font-weight: 900;
+                line-height: 92.523%; /* 3.48796rem */
+                text-transform: uppercase;
+
+                .text {
+
+                    span {
+                        color: #FF3A00;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 3.76984rem;
+                        font-style: italic;
+                        font-weight: 900;
+                        line-height: 92.523%;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .right {
+                margin: 2.18rem 3.37rem;
+            }
+        }
+    }
 `

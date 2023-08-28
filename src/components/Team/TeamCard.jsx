@@ -1,17 +1,18 @@
 import React from 'react'
 import { Card } from './TeamCard.st'
-
+import { BiLogoInstagram } from 'react-icons/bi'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
 const TeamCard = (props) => {
   return (
-    <Card>
-        <div className="image">Image</div>
-        <div className="name">Jitendra Asole</div>
-        <div className="post">Manager</div>
+    <Card bgUrl={props.image}>
+        <div className="image"></div>
+        <div className="name">{props.name}</div>
+        <div className="post">{props.role}</div>
         <div className="social-icons">
-            <div className="ig">IG</div>
-            <div className="li">Li</div>
-            <div className="github">GHub</div>
+            <div className="ig"><BiLogoInstagram size="2.38095rem"/></div>
+            <div className="li"><BsLinkedin size="2.38095rem"/></div>
+            <div className="github"><BsGithub size="2.38095rem"/></div>
         </div>
     </Card>
   )
