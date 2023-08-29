@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+    font-family: 'Rugen';
+    src: url('../fonts/RugenExpandedPersonalUse.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  html {
+    
+    font-size: 1vw;
+    scrollbar-width: thin;
+    scrollbar-color: #DD4B21 transparent; /* Updated color */
+  }
+
+  /* Hide the default scrollbar */
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #DD4B21; /* Updated color */
+  border-radius: 0.5em;
+}
+
+/* Firefox scrollbar */
+/* For IE and Edge */
+body {
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #DD4B21; /* Updated color */
+  border-radius: 0.5em;
+}

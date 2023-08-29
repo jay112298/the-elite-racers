@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Hero from "../../components/Hero/Hero"
 import { AppWrap } from './Home.st'
-import BlogWidget from '../../components/BlogWidget/BlogWidget'
+import BlogWidget from '../../components/Blog/BlogWidget'
 
 function Home() {
   const [count, setCount] = useState(0)

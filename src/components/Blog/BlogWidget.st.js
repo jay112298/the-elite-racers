@@ -2,10 +2,11 @@ import styled from 'styled-components'
 
 export const BlogWrap = styled.section`
 
-    width: 100%;
+    width: 90%;
     height: 22rem;
-    padding: 0 4.7rem;
+    padding: 0 5%;
 
+    margin: 5.7rem auto;
 
     .header {
 
@@ -41,7 +42,11 @@ export const BlogWrap = styled.section`
 
         display: flex;
         align-items: center;
-    
+        justify-content: space-between;
+        gap: 0.99rem;
+
+        width: 21.69312rem;
+        height: 17.59259rem;
 
     }
 
