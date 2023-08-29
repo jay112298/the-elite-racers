@@ -2,9 +2,9 @@ import styled from 'styled-components'
 
 export const BlogWrap = styled.section`
 
-    /* width: 100rem; */
+    width: 100%;
     height: 22rem;
-    margin: 0 4.7rem;
+    padding: 0 4.7rem;
 
 
     .header {

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HeroWrap = styled.section`
 
-  width: 100rem;
+  width: 99%;
   height: 46.42857rem;
   background: url(${props => props.blob1}), url(${props => props.blob2}), url(${props => props.x});
   background-repeat: no-repeat;
