@@ -1,7 +1,11 @@
 import React, {useState} from 'react'
 // import './Signup.css'
 import axios from 'axios'; // Import the axios library
+import { Link } from 'react-router-dom'
 import { SignupForm } from './Signup.st';
+import google from "../../assets/google.svg"
+import terSilver from "../../assets/ter-silver.png"
+import SignupImage from "../../assets/signup.svg"
 
 function Signup() {
     const [signupSuccess, setSignupSuccess] = useState(false);
@@ -72,73 +76,42 @@ function Signup() {
         sendData(); // Call the inner async function
     };
     return (
-        <SignupForm>
-            <h2>Sign Up</h2>
-            {signupSuccess && <div className="success-ribbon">{signUpMessage}</div>}
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Name:</label>
-                    <input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                    />
+        <SignupForm signupcover={SignupImage}>
+            <div className="content-block">
+                <div className="img">
+                    <div className="logo">
+                        <img src={terSilver} alt="Logo-Silver" />
+                    </div>
+                    <div className="slogan">The elite <span>racers</span></div>
+                    <div className="car"></div>
                 </div>
-                <div>
-                    <label>Lastname:</label>
-                    <input
-                        type="text"
-                        name="lastname"
-                        value={formData.lastname}
-                        onChange={handleInputChange}
-                        required
-                    />
+                <div className="form-section">
+                    <div className='form-area'>
+                    <div className="title">Create your account</div>
+                    <div className="google-link">
+                        <div className="google"><img src={google} alt="" /></div>
+                        <div className="text">Signup with Google</div>
+                    </div>
+                    <div className="or-sec">
+                        <div className='dash'></div>
+                        <div>or</div>
+                        <div className='dash'></div>
+                    </div>
+                    <div className="label">Name</div>
+                    <input type="text" />
+                    <div className="label">Email</div>
+                    <input type="text" />
+                    <div className="label">Password</div>
+                    <input type="password" />
+                    <div className="checkbox">
+                        <input type="checkbox" name="agree" id="agree" />
+                        <label>I agree to all <span>Terms, Privacy Policy</span> and <span>Fees</span></label>
+                    </div>
+                    <button>Sign Up</button>
+                    <div className="signup-link">Have An Account? <Link>Log In</Link></div>
+                    </div>
                 </div>
-                <div>
-                    <label>Email:</label>
-                    <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                    />
-                </div>
-                <div>
-                    <label>Password:</label>
-                    <input
-                        type="password"
-                        name="password"
-                        value={formData.password}
-                        onChange={handleInputChange}
-                        required
-                    />
-                </div>
-                <div>
-                    <label>Branch:</label>
-                    <select name="branch" value={formData.branch} onChange={handleInputChange}>
-                        <option value="ME">ME</option>
-                        <option value="EE">EE</option>
-                        <option value="CS">CS</option>
-                        <option value="ETC">ETC</option>
-                    </select>
-                </div>
-                <div>
-                    <label>Department:</label>
-                    <select name="department" value={formData.department} onChange={handleInputChange}>
-                        <option value="Aero">Aero</option>
-                        <option value="Chassis">Chassis</option>
-                        <option value="Powertrain">Powertrain</option>
-                        <option value="Suspension">Suspension</option>
-                        <option value="Vehicle Dynamics">Vehicle Dynamics</option>
-                    </select>
-                </div>
-                <div>
-                    <button type='submit'>Sign Up</button>
-                </div>
-            </form>
+            </div>
         </SignupForm>
     );
 }
