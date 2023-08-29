@@ -7,7 +7,6 @@ export const HeroWrap = styled.section`
   background: url(${props => props.blob1}), url(${props => props.blob2}), url(${props => props.x});
   background-repeat: no-repeat;
   background-position: 0% 5%, 86% 11%, 15% 65%;
-  background-blend-mode:  ;
 
   nav {
     display: flex;

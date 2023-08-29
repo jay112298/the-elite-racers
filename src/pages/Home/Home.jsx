@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Hero from "../../components/Hero/Hero"
 import { AppWrap } from './Home.st'
+import BlogWidget from '../../components/BlogWidget/BlogWidget'
 
 function Home() {
   const [count, setCount] = useState(0)
@@ -8,6 +9,7 @@ function Home() {
   return (
     <AppWrap>
       <Hero />
+      <BlogWidget />
     </AppWrap>
   )
 }
