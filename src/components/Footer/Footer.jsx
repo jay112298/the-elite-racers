@@ -1,6 +1,8 @@
 import React from "react";
 import { FooterSec } from "./Footer.st";
 import footerLogo from "../../assets/elite-footer.svg"
+import {BsFacebook, BsLinkedin, BsYoutube, BsInstagram, } from "react-icons/bs"
+import Xcorp from "../../assets/xcorp.svg"
 
 const Footer = () => {
   return (
@@ -43,7 +45,7 @@ const Footer = () => {
           <div className="vision">
             <div className="footnav-title">Our Vision</div>
             <div className="footnav-content">
-              <div className="para">With a fierance ambition to change the game, The Elite Racers Formula One SAE team of SBJITMR is bringing new energy to F1 in its quest for national level titles. Based in Nagpur, the team's talented driver squad includes skilled drivers as well as assembly technicians inorder to build skilled undergrads for motorsports.</div>
+              <div className="para">With a fierance ambition to change the game, The Elite Racers Formula SAE team of SBJITMR is bringing new energy to F1 in its quest for national level titles. Based in Nagpur, the team's talented squad includes skilled drivers as well as engineers inorder to build skilled undergrads for motorsports.</div>
               <div className="slogan">
                 <div className="shape"></div>
                 <div className="text">Want to <span>join</span> our league?</div>
@@ -53,7 +55,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="social-icons">
-          
+          <div className="icon"><BsFacebook size="2rem"/></div>
+          <div className="icon"><BsLinkedin size="2rem"/></div>
+          <div className="icon"><BsYoutube size="2rem"/></div>
+          <div className="icon"><BsInstagram size="2rem"/></div>
+          <div className="icon"><img src={Xcorp} alt="" /></div>
         </div>
       </div>
       <div className="blank"></div>

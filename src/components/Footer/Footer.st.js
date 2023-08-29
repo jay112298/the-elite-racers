@@ -4,6 +4,7 @@ export const FooterSec = styled.footer`
 
     display: flex;
     align-items: flex-end;
+    margin-bottom: 2rem;
 
     .blank {
         width: 4.69577rem;
@@ -180,6 +181,23 @@ export const FooterSec = styled.footer`
                     }
                 }
 
+            }
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.46rem;
+        margin: 2.65rem 1.06rem;
+        margin-bottom: 0;
+
+        .icon {
+            color: #D93100;
+            padding: 3px 5px;
+            img {
+                height: 2rem;
             }
         }
     }

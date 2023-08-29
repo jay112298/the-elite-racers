@@ -86,17 +86,17 @@ export const TeamWrapper = styled.div`
 
     .explore-team {
         position: absolute;
-        height: 245px;
-        width: 245px;
+        /* height: 245px; */
+        /* width: 245px; */
         top: calc(49.6rem + 114.36px);
         left: 43.12rem;
         z-index: 2;
         border-radius: 50rem;
-        box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+        /* box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.25); */
         background-color: #FFF;
 
         img {
-        margin: 1rem 1rem;
+            width: 10rem;
 
         }
 
