@@ -4,7 +4,10 @@ export const HeroWrap = styled.section`
 
   width: 100rem;
   height: 46.42857rem;
-  background: url(), url(), url();
+  background: url(${props => props.blob1}), url(${props => props.blob2}), url(${props => props.x});
+  background-repeat: no-repeat;
+  background-position: 0% 5%, 86% 11%, 15% 65%;
+  background-blend-mode:  ;
 
   nav {
     display: flex;
@@ -81,11 +84,13 @@ export const HeroWrap = styled.section`
   .hero-content {
 
     font-family: 'Inter', sans-serif;
+    background: url(), url(), url();
     .top {
       display: flex;
       align-items: center;
       justify-content: space-around;
       margin-top: 2.45rem;
+      margin-left: 5.6rem;
 
       .left {
 

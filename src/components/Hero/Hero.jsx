@@ -5,6 +5,9 @@ import EliteLogo from "../../assets/elite-logo.svg"
 import { HeroWrap } from './Hero.st'
 import arrow from "../../assets/hero/explore.svg"
 import heroCar from "../../assets/hero/rb17.png"
+import Blob1 from "../../assets/hero/dot1.svg"
+import Blob2 from "../../assets/hero/dot2.svg"
+import X from "../../assets/hero/x.svg"
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -17,7 +20,7 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <HeroWrap>
+    <HeroWrap blob1={Blob1} blob2={Blob2} x={X}>
       <nav>
         <div className="logo">
           <img src={EliteLogo} />
