@@ -8,11 +8,16 @@ export const ExploreSec = styled.section`
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
+    justify-content: space-between;
 
+    background-image: url(${props => props.blob1}), url(${props => props.blob2}), url(${props => props.blob3}), url(${props => props.ogStar}), url(${props => props.ogStar}), url(${props => props.ogStar});
+    background-repeat: no-repeat;
+    background-position: 0% 0%, 100% 0%, 0% 100%, 4% 95%, 36% 5%, 39% 2%;
+    background-size: auto, auto, auto, 3.4rem, 2.8rem, 1.78rem;
 
     .content {
 
-        margin: 5.29rem 5.6rem;
+        margin: 5.29rem 4.2rem;
 
         .explore {
             .speed {
@@ -89,6 +94,7 @@ export const ExploreSec = styled.section`
         width: 39.48413rem;
         height: 50.40787rem;
         margin-top: 2.9rem;
+        margin-right: 2.45rem;
         flex-shrink: 0;
         border-radius: 1.5211rem;
         /* background: linear-gradient(223deg, #D93100 0%, #000 47.26%, #D93100 76.47%); */
@@ -140,6 +146,77 @@ export const ExploreSec = styled.section`
                 }
             }
 
+        }
+
+        .content {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .sae {
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                .f {
+
+                    img {
+                        width: 5.88rem;
+                        height: 3.10rem;
+                    }
+
+                }
+
+                .star {
+
+                    img {
+                        margin: 1.98rem 0;
+                        width: 3.24rem;
+                    }
+
+                    &:last-child {
+                        img {
+                            margin-top: 0rem;
+                        }
+                    }
+
+
+
+
+                }
+
+                .sae-typo {
+                    height: 20rem;
+                    width: 9rem;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: 'Rugen', sans-serif;
+                    font-size: 5rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    /* line-height: 0%; 0rem */
+                }
+
+            }
+
+            .car {
+
+                height: 35rem;
+                width: 23.4127rem;
+                display: flex;
+                justify-content: flex-end;
+
+                img {
+
+                    height: 34rem;
+                    
+
+                }
+            }
         }
     }
 `;

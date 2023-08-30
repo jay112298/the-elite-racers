@@ -3,10 +3,17 @@ import { ExploreSec } from './Explore.st'
 import Victory from "../../assets/home/victory.svg"
 import Subtract from "../../assets/home/subtract.svg"
 import TerSilver from "../../assets/ter-silver.png"
+import fsaeTop from "../../assets/home/fsae-car.png"
+import Flogo from "../../assets/home/f-logo.svg"
+import Star from "../../assets/home/plus-star.svg"
+import Blob1 from "../../assets/home/blob1.svg"
+import Blob2 from "../../assets/home/blob2.svg"
+import Blob3 from "../../assets/home/blob3.svg"
+import OrangeStar from "../../assets/home/orange-star.svg"
 
 const Explore = () => {
   return (
-    <ExploreSec subtract={Subtract}>
+    <ExploreSec subtract={Subtract} blob1={Blob1} blob2={Blob2} blob3={Blob3} ogStar={OrangeStar}>
         <div className="content">
             <div className="explore">
                 <div className="speed"><span>Speed</span><br/>is our language</div>
@@ -24,9 +31,24 @@ const Explore = () => {
                     <img src={TerSilver} alt="Logo Silver" />
                 </div>
             </div>
-            <div className="content"></div>
+            <div className="content">
+                <div className="sae">
+                    <div className="f">
+                        <img src={Flogo} alt="Formula" />
+                    </div>
+                    <div className="star"><img src={Star} alt="" /></div>
+                    <div className="sae-typo">
+                        <div>S</div>
+                        <div>A</div>
+                        <div>E</div>
+                    </div>
+                    <div className="star"><img src={Star} alt="" /></div>
+                </div>
+                <div className="car">
+                    <img src={fsaeTop} alt="FSAE Car, Top View" />
+                </div>
+            </div>
         </div>
-        {/* <img className='fsae' src={Subtract} alt="" /> */}
     </ExploreSec>
   )
 }
