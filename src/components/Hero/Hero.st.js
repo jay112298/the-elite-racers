@@ -28,7 +28,7 @@ export const HeroWrap = styled.section`
         .nav-links {
             color: #000;
             
-            font-size: 14px;
+            font-size: 0.92593rem;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -49,13 +49,13 @@ export const HeroWrap = styled.section`
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 6.15551rem;
-            height: 2.4838rem;
+            width: 7.53968rem;
+            height: 3.04233rem;
             flex-shrink: 0;
             border-radius: 0.43197rem;
             border: 1px solid #D93100;
             color: #D93100;
-            font-size: 0.75594rem;
+            font-size: 0.92593rem;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -65,13 +65,13 @@ export const HeroWrap = styled.section`
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 6.15551rem;
-            height: 2.4838rem;
+            width: 7.53968rem;
+            height: 3.04233rem;
             flex-shrink: 0;
             border-radius: 0.43197rem;
             background: #D93100;
             color: #FFF;
-            font-size: 0.75594rem;
+            font-size: 0.92593rem;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
