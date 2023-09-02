@@ -99,7 +99,7 @@ export const SignupForm = styled.div`
                     line-height: normal;
                 }
     
-                input[type="text"], input[type="password"] {
+                input[type="text"], input[type="email"], input[type="password"] {
                     padding: 0.2rem 1rem;
                     width: 21.47884rem;
                     height: 1.65026rem;

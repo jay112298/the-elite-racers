@@ -12,12 +12,15 @@ function Signup() {
     const [signUpMessage, setSignUpMessage] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
+        email: '',
+        password: '',
+    });
+    const [finalFormData, setFinalFormData] = useState({
+        name: '',
         lastname: '',
         email: '',
         password: '',
-        branch: 'ME',
-        department: 'Aero'
-    });
+    })
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -25,19 +28,32 @@ function Signup() {
             ...prevData,
             [name]: value
         }));
+
+        console.log(formData);
     };
 
     const handleSubmit = (event) => {
         event.preventDefault();
 
+        const nameParts = formData.name.split(' ')
+
+        const setFinalFormData = {
+            name: nameParts[0],
+            lastname: nameParts[1],
+            email: formData.email,
+            password: formData.password
+        }
+
+        console.log(finalFormData)
+
         const sendData = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/signup', {
+                const response = await fetch('https://aggressive-shorts-lion.cyclic.app/api/signup', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify(formData)
+                    body: JSON.stringify(finalFormData)
                 });
 
                 const responseData = await response.json();
@@ -62,8 +78,8 @@ function Signup() {
                     lastname: '',
                     email: '',
                     password: '',
-                    branch: 'ME',
-                    department: 'Aero'
+                    branch: '',
+                    department: ''
                 });
 
             } catch (error) {
@@ -98,16 +114,16 @@ function Signup() {
                         <div className='dash'></div>
                     </div>
                     <div className="label">Name</div>
-                    <input type="text" />
+                    <input type="text" name='name' value={formData.name} onChange={handleInputChange}/>
                     <div className="label">Email</div>
-                    <input type="text" />
+                    <input type="email" name='email' value={formData.email} onChange={handleInputChange}/>
                     <div className="label">Password</div>
-                    <input type="password" />
+                    <input type="password" name='password' value={formData.password} onChange={handleInputChange}/>
                     <div className="checkbox">
                         <input type="checkbox" name="agree" id="agree" />
                         <label>I agree to all <span>Terms, Privacy Policy</span> and <span>Fees</span></label>
                     </div>
-                    <button>Sign Up</button>
+                    <button onClick={handleSubmit}>Sign Up</button>
                     <div className="signup-link">Have An Account? <Link>Log In</Link></div>
                     </div>
                 </div>

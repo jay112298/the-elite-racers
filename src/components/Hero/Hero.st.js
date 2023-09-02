@@ -26,6 +26,9 @@ export const HeroWrap = styled.section`
         justify-content: space-between;
 
         .nav-links {
+
+          a {
+
             color: #000;
             
             font-size: 0.92593rem;
@@ -33,6 +36,8 @@ export const HeroWrap = styled.section`
             font-weight: 400;
             line-height: normal;
             margin: auto 1.14rem;
+            text-decoration: none;
+          }
         }
 
  
@@ -75,6 +80,13 @@ export const HeroWrap = styled.section`
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+        }
+
+        .signup, .login {
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
         }
     }
 

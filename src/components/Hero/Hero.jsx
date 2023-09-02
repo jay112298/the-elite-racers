@@ -2,18 +2,22 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import EliteLogo from "../../assets/elite-logo.svg"
+
 import { HeroWrap } from './Hero.st'
 import arrow from "../../assets/hero/explore.svg"
 import heroCar from "../../assets/hero/rb17.png"
 import Blob1 from "../../assets/hero/dot1.svg"
 import Blob2 from "../../assets/hero/dot2.svg"
 import X from "../../assets/hero/x.svg"
+import { Link } from 'react-router-dom'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'About', href: '/about' },
+  { name: 'Races', href: '/races' },
+  { name: 'Vehicles', href: 'vehicles' },
+  { name: 'Contact', href: '/contacts' },
+  { name: 'Recruitments', href: '/recruitments' },
+  { name: 'Partners', href: '/partners' },
 ]
 
 export default function Hero() {
@@ -26,16 +30,17 @@ export default function Hero() {
           <img src={EliteLogo} />
         </div>
         <div className="nav">
-          <div className="nav-links">About</div>
+          {navigation.map( (navComp) => <div className="nav-links"><Link to={navComp.href}>{navComp.name}</Link></div>)}
+          {/* <div className="nav-links">About</div>
           <div className="nav-links">Races</div>
           <div className="nav-links">Vehicles</div>
           <div className="nav-links">Contact</div>
           <div className="nav-links">Recruitments</div>
-          <div className="nav-links">Partners</div>
+          <div className="nav-links">Partners</div> */}
         </div>
         <div className="account-dash">
-          <div className="signup">SignUp</div>
-          <div className="login">Login</div>
+          <div className="signup"><Link to="/signup">SignUp</Link></div>
+          <div className="login"><Link to="/login">Login</Link></div>
         </div>
       </nav>
       <div className="hero-content">
