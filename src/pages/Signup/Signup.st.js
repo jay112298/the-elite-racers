@@ -159,6 +159,14 @@ export const SignupForm = styled.div`
                     border-color: #D93100;
                 }
 
+                .success {
+                    background: green;
+                }
+
+                .failed {
+                    background: red;
+                }
+
                 .forgot-pass {
                     margin-top: 0.86rem;
                     margin-bottom: 1.52rem;
