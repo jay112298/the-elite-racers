@@ -40,7 +40,7 @@ const Router = () => {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/raceEvents" element={<RaceEvents />} />
           <Route path="/vehicle" element={<Vehicle />} />
-          <Route path="/termsofuse" element={<TermsOfUse />} />
+          {/* <Route path="/termsofuse" element={<TermsOfUse />} /> */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/merchandise" element={<Merchandise />} />
           <Route path="/achievements" element={<AchievementsPage />} />
