@@ -19,7 +19,7 @@ import TermsOfUse from './components/TermsOfUse/TermsOfUse';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import Merchandise from './components/Merchandise/Merchandise';
 import AchievementsPage  from './components/Achievements/AchievementsPage';
-import Blog1 from './components/Blog/BLog1'
+import Blog1 from './components/Blog/Blog1';
 import Blog2 from './components/Blog/Blog2';
 import Blog3 from './components/Blog/Blog3';
 import Blog4 from './components/Blog/Blog4';
