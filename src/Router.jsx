@@ -5,6 +5,8 @@ import Recruitments from "./pages/Recruitments/Recruitments";
 import Team from "./pages/Team/Team";
 import About from "./pages/About/About";
 import Contact from './pages/Contact/Contact';
+// import Signup from './pages/Signup/Signup';
+// import Login from './pages/Login/Login';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Sheet from './pages/Dashboard/Sheet/Sheet';
 import Documents from './pages/Dashboard/Documents/Documents';
@@ -13,7 +15,7 @@ import Gallery from './components/Gallery/Gallery';
 import Partners from './components/Partners/Partners';
 import Vehicle from './components/Vehicle/Vehicle';
 import RaceEvents from './pages/RaceEvents/RaceEvents';
-// import TermsOfUse from './components/TermsofUse/TermsOfUse.jsx';
+import TermsOfUse from './components/TermsofUse/TermsOfUse';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import Merchandise from './components/Merchandise/Merchandise';
 import AchievementsPage  from './components/Achievements/AchievementsPage';
@@ -40,7 +42,7 @@ const Router = () => {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/raceEvents" element={<RaceEvents />} />
           <Route path="/vehicle" element={<Vehicle />} />
-          {/* <Route path="/termsofuse" element={<TermsOfUse />} /> */}
+          <Route path="/termsofuse" element={<TermsOfUse />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/merchandise" element={<Merchandise />} />
           <Route path="/achievements" element={<AchievementsPage />} />

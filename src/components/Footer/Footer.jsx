@@ -182,7 +182,7 @@ const Footer = () => {
                     >
                       Gallery
                     </li>
-                    {/* <li
+                    <li
                       onClick={() => {
                         handleNavigation("/termsofuse");
                         window.scrollTo(0, 0);
@@ -190,7 +190,7 @@ const Footer = () => {
                       style={{ cursor: "pointer" }}
                     >
                       Terms of use
-                    </li> */}
+                    </li>
                     <li
                       onClick={() => {
                         handleNavigation("/privacy-policy");
