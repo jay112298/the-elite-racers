@@ -99,6 +99,7 @@ export const Race = styled.section`
             width: 25.99206rem;
             height: 19.90741rem;
             border-radius: 1.38889rem;
+            style={{ backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}
             background: #FFF;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             display: flex;
@@ -186,7 +187,7 @@ export const Race = styled.section`
                 .month{
                     color: #D93100;
                     font-family: 'Rugen', sans-serif;
-                    font-size: 1.7756rem;
+                    font-size: 1.5756rem;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;

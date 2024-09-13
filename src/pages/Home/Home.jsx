@@ -4,6 +4,8 @@ import { AppWrap } from './Home.st'
 import BlogWidget from '../../components/Blog/BlogWidget'
 import Explore from '../../components/Explore/Explore'
 import Races from '../../components/Races/Races'
+import RecruitmentBanner from '../../components/RecruitmentBanner/RecruitmentBanner'
+import PastEvents from '../../components/PastEvents/PastEvents'
 import Footer from '../../components/Footer/Footer'
 
 function Home() {
@@ -14,7 +16,9 @@ function Home() {
       <Hero />
       <BlogWidget />
       <Explore />
-      <Races />
+      <Races /> 
+      <RecruitmentBanner />
+      <PastEvents />
       <Footer />
     </AppWrap>
   )
