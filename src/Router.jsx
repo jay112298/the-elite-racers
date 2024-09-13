@@ -5,15 +5,12 @@ import Recruitments from "./pages/Recruitments/Recruitments";
 import Team from "./pages/Team/Team";
 import About from "./pages/About/About";
 import Contact from './pages/Contact/Contact';
-// import Signup from './pages/Signup/Signup';
-// import Login from './pages/Login/Login';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Sheet from './pages/Dashboard/Sheet/Sheet';
 import Documents from './pages/Dashboard/Documents/Documents';
 import Communication from './pages/Dashboard/Communication/Communication';
 import Gallery from './components/Gallery/Gallery';
 import Partners from './components/Partners/Partners';
-// import Race from './components/Races/Races';
 import Vehicle from './components/Vehicle/Vehicle';
 import RaceEvents from './pages/RaceEvents/RaceEvents';
 import TermsOfUse from './components/TermsofUse/TermsOfUse';
@@ -35,8 +32,6 @@ const Router = () => {
           <Route path="/team" element={<Team />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          {/* <Route path="/signup" element={<Signup />}></Route>
-          <Route path="/login" element={<Login />}></Route> */}
           <Route path="/dashboard" element={<Dashboard />}></Route>
           <Route path="/dashboard/sheet" element={<Sheet />} />
           <Route path="/dashboard/documents" element={<Documents />} />
@@ -53,10 +48,6 @@ const Router = () => {
           <Route path="/blog2" element={<Blog2/>} />
           <Route path="/blog3" element={<Blog3 />} />
           <Route path="/blog4" element={<Blog4 />} />
-
-          {/* <Route path="/contactlist" element={<ContactList />} /> */}
-          {/* <Route path="/recruitmentBanner" element={<RecruitmentBanner />} />
-          <Route path="/pastEvents" element={<PastEvents />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
