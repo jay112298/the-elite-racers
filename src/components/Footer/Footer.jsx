@@ -184,7 +184,7 @@ const Footer = () => {
                     </li>
                     <li
                       onClick={() => {
-                        handleNavigation("/terms-of-use");
+                        handleNavigation("/termsofuse");
                         window.scrollTo(0, 0);
                       }}
                       style={{ cursor: "pointer" }}
