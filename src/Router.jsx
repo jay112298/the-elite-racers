@@ -15,7 +15,7 @@ import Gallery from './components/Gallery/Gallery';
 import Partners from './components/Partners/Partners';
 import Vehicle from './components/Vehicle/Vehicle';
 import RaceEvents from './pages/RaceEvents/RaceEvents';
-import TermsOfUse from './components/TermsofUse/TermsOfUse';
+import TermsOfUse from './components/TermsOfUse/TermsOfUse';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import Merchandise from './components/Merchandise/Merchandise';
 import AchievementsPage  from './components/Achievements/AchievementsPage';
