@@ -1,5 +1,5 @@
 import React from 'react';
-import { TermsContainer, TermsContent } from './TermsOfUse.st.st.js'
+import { TermsContainer, TermsContent } from './TermsOfUse.st'
 import Navbar from '../Navbar/Navbar';
 import Footer from "../Footer/Footer";
 
