@@ -109,7 +109,7 @@ const Partners = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <Title>Crowd Funding</Title>
+          <Title>CONTRIBUTE TO OUR TEAM</Title>
           <p>
             Your contribution can make a significant impact on our racing team's
             success. By supporting the Elite Racers Formula SAE team through
