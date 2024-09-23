@@ -26,8 +26,8 @@ export const products = [
   },
   {
     id: 5,
-    name: "Cap",
+    name: "Team Cap",
     description: "Stay warm with our official team hoodie.",
-    image: "https://via.placeholder.com/250x250?text=Stickers",
+    image: "https://via.placeholder.com/250x250?text=Cap",
   },
 ];

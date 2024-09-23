@@ -72,6 +72,31 @@ const Partners = () => {
             Our Sponsorship Proposal
           </Button>
         </MessageContainer>
+        <br></br>
+
+        <MessageContainer
+          as={motion.div}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+        >
+          <Title>Donate Now</Title>
+          <p>
+            Your contribution can make a significant impact on our racing team's success. By donating to the Elite Racers Formula SAE team, 
+            you're investing in the future of engineering and motorsports. Every donation, big or small, helps us push the boundaries of 
+            innovation and compete at the highest level. Your support enables us to acquire cutting-edge materials, enhance our design 
+            capabilities, and provide invaluable hands-on experience to our team members. Join us in our pursuit of excellence and help 
+            shape the next generation of engineering leaders.
+          </p>
+          <Button 
+            as={motion.button}
+            onClick={() => window.open("https://drive.google.com/file/d/1bp4H5J-ceW2Ll27SMFAT_yn8U3CJ_UsZ/view?usp=sharing", "_blank")}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Donate to Our Team
+          </Button>
+        </MessageContainer>
       </PartnersContainer>
       <Footer />
     </>
