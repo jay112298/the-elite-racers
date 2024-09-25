@@ -20,7 +20,8 @@ import {
   IconWrapper,
   ImageModal,
   ModalContent,
-  CloseButton
+  CloseButton,
+  Button
 } from './PastEvents.st';
 
 const PastEvents = () => {
@@ -128,8 +129,11 @@ const PastEvents = () => {
           </ModalContent>
         </ImageModal>
       )}
+      
     </ShowcaseContainer>
+    
   );
 };
+
 
 export default PastEvents;

@@ -11,6 +11,7 @@ import {
   ModalContent,
   CloseButton,
   NavigationButton,
+  Button
 } from "./Vehicle.st";
 import image1 from "../../assets/1.jpg";
 import image2 from "../../assets/2.jpg";
@@ -108,6 +109,7 @@ const Vehicle = () => {
           alt="Cars"
           onClick={() => handleSectionClick("cars")}
         />
+        
 
         {activeSection && (
           <VehiclesGrid>
@@ -119,7 +121,16 @@ const Vehicle = () => {
             ))}
           </VehiclesGrid>
         )}
+        <br></br>
+        <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+        <Button
+          onClick={() => window.open("https://drive.google.com/file/d/1bp4H5J-ceW2Ll27SMFAT_yn8U3CJ_UsZ/view?usp=sharing", "_blank")}
+        >
+          Support Our Team
+        </Button>
+      </div>
       </VehiclesContainer>
+      
       <Footer />
 
       {selectedImageIndex !== null && (
@@ -149,6 +160,7 @@ const Vehicle = () => {
               &#8250;
             </NavigationButton>
           </ModalContent>
+          
         </Modal>
       )}
     </>

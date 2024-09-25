@@ -7,6 +7,7 @@ import Races from '../../components/Races/Races'
 import RecruitmentBanner from '../../components/RecruitmentBanner/RecruitmentBanner'
 import PastEvents from '../../components/PastEvents/PastEvents'
 import Footer from '../../components/Footer/Footer'
+// import { Button } from './Button.st'
 
 function Home() {
   const [count, setCount] = useState(0)

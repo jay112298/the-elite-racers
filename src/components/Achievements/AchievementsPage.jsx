@@ -15,7 +15,8 @@ import {
   EventImage,
   ImageModal,
   ModalContent,
-  CloseButton
+  CloseButton,
+  Button
 } from './AchievementsPage.st';
 
 const AchievementsPage = () => {
@@ -90,8 +91,17 @@ const AchievementsPage = () => {
               )}
             </AchievementCard>
           ))}
+          
         </AchievementGrid>
+        
       </AchievementsContainer>
+      <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+        <Button
+          onClick={() => window.open("https://drive.google.com/file/d/1bp4H5J-ceW2Ll27SMFAT_yn8U3CJ_UsZ/view?usp=sharing", "_blank")}
+        >
+          Support Our Team
+        </Button>
+      </div>
       {selectedImage && (
         <ImageModal onClick={closeModal}>
           <ModalContent>

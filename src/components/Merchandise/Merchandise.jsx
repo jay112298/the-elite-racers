@@ -12,7 +12,8 @@ import {
   ModalContent,
   ModalHeading,
   ModalDescription,
-  CloseButton
+  CloseButton,
+  Button
 } from './Merchandise.st.js';
 import { products } from './data';
 import Navbar from '../Navbar/Navbar'; 
@@ -46,8 +47,17 @@ const Merchandise = () => {
             <ProductName>{product.name}</ProductName>
             <ProductDescription>{product.description}</ProductDescription>
           </ProductCard>
+          
         ))}
+        
       </ProductGrid>
+      <div style={{ textAlign: 'center', marginTop: '2rem', marginBottom: '2rem' }}>
+        <Button
+          onClick={() => window.open("https://drive.google.com/file/d/1bp4H5J-ceW2Ll27SMFAT_yn8U3CJ_UsZ/view?usp=sharing", "_blank")}
+        >
+          Support Our Team
+        </Button>
+      </div>
 
       {selectedProduct && (
         <Modal onClick={closeModal}>
@@ -57,8 +67,11 @@ const Merchandise = () => {
             <ModalHeading>{selectedProduct.name}</ModalHeading>
             <ModalDescription>{selectedProduct.description}</ModalDescription>
           </ModalContent>
+          
         </Modal>
+        
       )}
+
       <Footer />
     </MerchandiseContainer>
   );

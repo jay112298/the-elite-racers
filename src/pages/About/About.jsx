@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import { AboutContainer, AboutContent, AboutSection } from "./About.st";
+import { AboutContainer, AboutContent, AboutSection, Button } from "./About.st";
 
 const About = () => {
   return (
@@ -23,9 +23,18 @@ const About = () => {
           <AboutSection>
             <h2>Our Mission</h2>
             <p>Our mission is to bridge the gap between academia and industry by providing students with opportunities to develop leadership, design, and technical skills. Through Formula SAE, we aim to create a platform for students to showcase their abilities, grow into future leaders, and compete at a global level with top engineering schools.</p>
+
           </AboutSection>
+          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+            <Button
+              onClick={() => window.open("https://drive.google.com/file/d/1bp4H5J-ceW2Ll27SMFAT_yn8U3CJ_UsZ/view?usp=sharing", "_blank")}
+            >
+              Support Our Team
+            </Button>
+          </div>
         </AboutContent>
       </AboutContainer>
+      
       <Footer />
     </>
   );
