@@ -16,12 +16,12 @@ const styles = {
     position: "relative",
   },
   eliteLogo: {
-    position: 'absolute',
-    top: '1px',
-    left: '10px',
-    width: '100px',
-    height: '100px',
-    filter: 'brightness(0) invert(1)',
+    position: "absolute",
+    top: "1px",
+    left: "10px",
+    width: "100px",
+    height: "100px",
+    filter: "brightness(0) invert(1)",
   },
   logoPlaceholder: {
     position: "absolute",
@@ -33,7 +33,7 @@ const styles = {
   headerText: {
     position: "absolute",
     top: "50%",
-    left: "400px", 
+    left: "400px",
     transform: "translate(-50%, -50%)",
     width: "575px",
     height: "108px",
@@ -67,7 +67,7 @@ const styles = {
   searchContainer: {
     width: "566px",
     height: "63px",
-    top: "211px",
+    top: "321px",
     left: "296px",
     position: "absolute",
     display: "flex",
@@ -151,7 +151,7 @@ const styles = {
   },
   filterBox: {
     width: "203px",
-    border: "1px ", 
+    border: "1px ",
     borderRadius: "23px 23px 23px 23px",
     boxShadow: "0px 4px 4px 0px #00000040",
     padding: "10px",
@@ -174,15 +174,13 @@ const styles = {
   middleSection: {
     flex: 1,
     padding: "0 20px",
-    
-    
   },
   jobCard: {
     width: "920px",
     height: "171px",
     boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
     padding: "20px",
-    border: 'none',
+    border: "none",
     marginBottom: "20px",
     position: "relative",
     display: "flex",

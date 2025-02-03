@@ -7,6 +7,7 @@ import styles from "./Recruitments.st.js";
 import EliteLogo from "../../assets/elite-logo.svg";
 import Crew from "../../assets/crew.png";
 import Vector from "../../assets/vector.svg";
+import Navbar from "../../components/Navbar/Navbar";
 
 const jobCardStyles = {
   container: {
@@ -101,6 +102,7 @@ const Recruitments = () => {
 
   return (
     <div style={styles.container}>
+      <Navbar />
       {/* Header */}
       <div style={styles.header}>
         <img src={EliteLogo} alt="Elite Logo" style={styles.eliteLogo} />
