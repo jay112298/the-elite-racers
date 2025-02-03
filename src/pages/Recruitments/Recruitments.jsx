@@ -58,10 +58,12 @@ const Recruitments = () => {
     "Social Media",
     "Suspension",
     "Vehicle Dynamics",
+    "Brakes",
     "Web Developement",
     "UI/UX Designer",
     "Marketing",
     "Cloud Engineer",
+    "Content Lead",
   ];
 
   const [searchTerm, setSearchTerm] = useState("");
