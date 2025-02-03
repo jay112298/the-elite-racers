@@ -1,71 +1,144 @@
 import React from "react";
+import { motion } from "framer-motion";
+import styled from "styled-components";
 import {
   PartnersContainer,
-  PartnersGrid,
-  PartnerCard,
   MessageContainer,
   Button,
   Title,
-  Logo,
-  PartnerName,
 } from "./Partners.st";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import { motion } from "framer-motion";
+import SolidWorks from "./SolidWorks.png";
+import MathWorks from "./MathWorks.png";
+import Ansys from "./Ansys.png";
+import FfcGym from "./FfcGym.png";
+import Bangal from "./bangal.png";
+import Rehman from "./Rehman.png";
+import Shende from "./Shende.png";
+import Green from "./Green.png";
+
+const ScrollContainer = styled.div`
+  position: relative;
+  width: 100%;
+  padding: 4rem 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.8) 20%,
+    rgba(255, 255, 255, 0.8) 80%,
+    rgba(255, 255, 255, 0.95) 100%
+  );
+  margin: 3rem 0;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.95),
+      transparent
+    );
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.95),
+      transparent
+    );
+  }
+`;
+
+const MarqueeTrack = styled(motion.div)`
+  display: flex;
+  gap: 3rem;
+  padding: 1rem;
+`;
+
+const PartnerItem = styled(motion.div)`
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+  }
+`;
+
+const LogoContainer = styled.div`
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f8f9fa;
+`;
+
+const LogoImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+
+  ${PartnerItem}:hover & {
+    transform: scale(1.05);
+  }
+`;
+
+const PartnerName = styled.p`
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-family: "Inter", sans-serif;
+`;
 
 const Partners = () => {
   const partners = [
-    { name: "INEOS", logo: "https://picsum.photos/seed/INEOS/150/150" },
-    { name: "Petronas", logo: "https://picsum.photos/seed/Petronas/150/150" },
-    {
-      name: "TeamViewer",
-      logo: "https://picsum.photos/seed/TeamViewer/150/150",
-    },
-    {
-      name: "IWC Schaffhausen",
-      logo: "https://picsum.photos/seed/IWC/150/150",
-    },
-    { name: "AMD", logo: "https://picsum.photos/seed/AMD/150/150" },
-    { name: "PUMA", logo: "https://picsum.photos/seed/PUMA/150/150" },
-    { name: "Epson", logo: "https://picsum.photos/seed/Epson/150/150" },
-    { name: "Bose", logo: "https://picsum.photos/seed/Bose/150/150" },
-    {
-      name: "CrowdStrike",
-      logo: "https://picsum.photos/seed/CrowdStrike/150/150",
-    },
+    { name: "Solid Works", logo: SolidWorks },
+    { name: "MathWorks", logo: MathWorks },
+    { name: "Ansys", logo: Ansys },
+    { name: "FFC Gym", logo: FfcGym },
+    { name: "Bangal Plywood", logo: Bangal },
+    { name: "Rehman Battery House", logo: Rehman },
+    { name: "Shende Enterprises", logo: Shende },
+    { name: "Green Growers", logo: Green },
   ];
+
+  const doubledPartners = [...partners, ...partners];
 
   return (
     <>
       <Navbar />
       <PartnersContainer>
-        {/* <Title
-          as={motion.h1}
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          Our Partners
-        </Title> */}
-        {/* <PartnersGrid>
-          {partners.map((partner, index) => (
-            <PartnerCard
-              key={index}
-              as={motion.div}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -5, boxShadow: '0 5px 15px rgba(0,0,0,0.1)' }}
-            >
-              <Logo
-                src={partner.logo}
-                alt={partner.name}
-              />
-              <PartnerName>{partner.name}</PartnerName>
-            </PartnerCard>
-          ))}
-        </PartnersGrid> */}
-
         <MessageContainer
           as={motion.div}
           initial={{ opacity: 0, y: 20 }}
@@ -101,7 +174,43 @@ const Partners = () => {
             Our Sponsorship Proposal
           </Button>
         </MessageContainer>
-        <br></br>
+
+        <ScrollContainer>
+          <Title
+            as={motion.h2}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Our Partners
+          </Title>
+          <MarqueeTrack
+            animate={{
+              x: [0, -2400],
+            }}
+            transition={{
+              x: {
+                duration: 30,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "linear",
+              },
+            }}
+          >
+            {doubledPartners.map((partner, index) => (
+              <PartnerItem key={index}>
+                <LogoContainer>
+                  <LogoImage
+                    src={partner.logo}
+                    alt={partner.name}
+                    loading="lazy"
+                  />
+                </LogoContainer>
+                <PartnerName>{partner.name}</PartnerName>
+              </PartnerItem>
+            ))}
+          </MarqueeTrack>
+        </ScrollContainer>
 
         <MessageContainer
           as={motion.div}

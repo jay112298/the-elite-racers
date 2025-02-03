@@ -53,7 +53,7 @@ const Recruitments = () => {
     "Aerodynamicist",
     "Chassis Engineer",
     "Electronics and DAQ Engineer",
-    "PowerTrain",
+    "Power Train",
     "Social Media",
     "Suspension",
     "Vehicle Dynamics",

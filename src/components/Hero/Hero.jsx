@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import EliteLogo from "../../assets/elite-logo.svg"
-import { HeroWrap } from './Hero.st'
-import arrow from "../../assets/hero/explore.svg"
-import heroCar from "../../assets/hero/rb17.png"
-import Blob1 from "../../assets/hero/dot1.svg"
-import Blob2 from "../../assets/hero/dot2.svg"
-import X from "../../assets/hero/x.svg"
-import { useNavigate } from 'react-router-dom'
+import { useState } from "react";
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import EliteLogo from "../../assets/elite-logo.svg";
+import { HeroWrap } from "./Hero.st";
+import arrow from "../../assets/hero/explore.svg";
+import heroCar from "../../assets/hero/rb17.png";
+import Blob1 from "../../assets/hero/dot1.svg";
+import Blob2 from "../../assets/hero/dot2.svg";
+import X from "../../assets/hero/x.svg";
+import { useNavigate } from "react-router-dom";
 
 const navigation = [
-  { name: 'About', href: '/about' },
-  { name: 'Achievements', href: '/achievements' },
-  { name: 'Vehicle', href: '/vehicle' },
-  { name: 'Team', href: '/team' },
-  { name: 'Recruitments', href: '/recruitments' },
-  { name: 'Partners', href: '/partners' },
-]
+  { name: "About", href: "/about" },
+  { name: "Achievements", href: "/achievements" },
+  { name: "Vehicle", href: "/vehicle" },
+  { name: "Team", href: "/team" },
+  { name: "Recruitments", href: "/recruitments" },
+  { name: "Partners", href: "/partners" },
+];
 
 export default function Hero() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const navigate = useNavigate()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleExploreClick = () => {
-    navigate('/about')
-  }
+    navigate("/about");
+  };
 
   const handleLogoClick = () => {
-    window.location.reload()
-  }
+    window.location.reload();
+  };
 
   return (
     <HeroWrap blob1={Blob1} blob2={Blob2} x={X}>
@@ -59,8 +59,8 @@ export default function Hero() {
             <div className="body">
               <div className="shape"></div>
               <div className="text">
-                This is the offical website of <span>The Elite Racers</span> where
-                you can find out our progress of FSAE standings,open
+                This is the offical website of <span>The Elite Racers</span>{" "}
+                where you can find out our progress of FSAE standings,open
                 recruitments and much more.
               </div>
             </div>
@@ -79,5 +79,5 @@ export default function Hero() {
         </div>
       </div>
     </HeroWrap>
-  )
+  );
 }
