@@ -43,7 +43,7 @@ import img33 from "../../assets/TeamMembers/PrathamMendhe.png";
 import img35 from "../../assets/TeamMembers/AshuketKhakre.png";
 // import img36 from "../../assets/TeamMembers/AbhishekPadghan.png";
 import img37 from "../../assets/TeamMembers/ChetanAkhand.png";
-// import img38 from "../../assets/TeamMembers/RohanYedelloo.png";
+import img38 from "../../assets/TeamMembers/RohanYedelloo.png";
 // import img39 from "../../assets/TeamMembers/PranayRamteke.png";
 import img40 from "../../assets/TeamMembers/AmitRahangdale.png";
 import img41 from "../../assets/TeamMembers/KunalKadak.png";
@@ -54,21 +54,25 @@ import EliteLogo from "../../assets/elite-logo.svg";
 
 const people = [
   {
-    name: "Jitendra Asole",
-    role: "Team Manager",
-    imageUrl: img26,
-  },
-  {
     name: "Rahul Patankar",
     role: "Team Captain",
     imageUrl: img27,
-    linkedinUrl: "https://www.linkedin.com/company/the-elite-racers/",
+    linkedinUrl: "https://www.linkedin.com/in/rahul-ter23/",
     iconSize: "2.8783rem",
   },
   {
     name: "Himanshu Mange",
     role: "Vice-Captain",
     imageUrl: img28,
+    linkedinUrl: "https://www.linkedin.com/in/himanshu-mange-1734b2232/",
+    iconSize: "2.8783rem",
+  },
+  {
+    name: "Jitendra Asole",
+    role: "Team Manager",
+    imageUrl: img26,
+    linkedinUrl: "https://www.linkedin.com/in/jitendra-asole-2906a018b/",
+    iconSize: "2.8783rem",
   },
 
   // {
@@ -108,58 +112,61 @@ const people = [
   //   iconSize: "2.8783rem",
   // },
 
-   {
+  {
     name: "Pratik Shende",
     role: "Chairperson",
     imageUrl: img14,
-    linkedinUrl: "https://www.linkedin.com/in/pratik-shende/",
+    linkedinUrl: "https://www.linkedin.com/in/pratik-shende-110111277/",
     iconSize: "2.8783rem",
   },
   {
     name: "Ninad Manekar",
     role: "Vice Chairperson",
     imageUrl: img24,
+    linkedinUrl:
+      "https://www.linkedin.com/in/ninad-prashantrao-manekar-1bb0bb231/",
+    iconSize: "2.8783rem",
   },
   {
     name: "Rani Shende",
     role: "Secretary",
     imageUrl: img18,
-    linkedinUrl: "https://www.linkedin.com/in/rani-shende/",
+    linkedinUrl: "https://www.linkedin.com/in/rani-shende-966b11256/",
     iconSize: "2.8783rem",
   },
   {
     name: "Mukinda Wakode",
     role: "Treasurer",
     imageUrl: img9,
-    linkedinUrl: "https://www.linkedin.com/in/mukinda-wakode/",
+    linkedinUrl: "https://www.linkedin.com/in/mukinda-wakode-93584b277/",
     iconSize: "2.8783rem",
   },
   {
     name: "Pawan Nasre",
     role: "Program Chair",
     imageUrl: img12,
-    linkedinUrl: "https://www.linkedin.com/in/pawan-nasre/",
+    linkedinUrl: "https://www.linkedin.com/in/pawan-nasre-9b1024263/",
     iconSize: "2.8783rem",
   },
   {
     name: "Kaushtubh Charpe",
     role: "Reception Chair",
     imageUrl: img5,
-    linkedinUrl: "https://www.linkedin.com/in/kaustubh-charpe/",
+    linkedinUrl: "https://www.linkedin.com/in/kaustubh-charpe-6579a228a/",
     iconSize: "2.8783rem",
   },
   {
     name: "Ubaid Rahman",
     role: "Membership Chair",
     imageUrl: img23,
-    linkedinUrl: "https://www.linkedin.com/in/ubaid-rahman/",
+    linkedinUrl: "https://www.linkedin.com/in/ubaid-rahman-a3a193336/",
     iconSize: "2.8783rem",
   },
   {
     name: "Lipiksha Dhakate",
     role: "Publicity Chair",
     imageUrl: img7,
-    linkedinUrl: "https://www.linkedin.com/in/lipiksha-dhakate/",
+    linkedinUrl: "https://www.linkedin.com/in/lipiksha-dhakate-8313a7288/",
     iconSize: "2.8783rem",
   },
   // {
@@ -176,7 +183,7 @@ const people = [
   //   linkedinUrl: "https://www.linkedin.com/company/the-elite-racers/",
   //   iconSize: "2.8783rem",
   // },
-  
+
   // {
   //   name: "Chetan Akhand",
   //   role: "Talent Scout",
@@ -188,7 +195,7 @@ const people = [
     name: "Anshika Kumari",
     role: "Suspension Department Member",
     imageUrl: img1,
-    linkedinUrl: "https://www.linkedin.com/in/anshika-kumari/",
+    linkedinUrl: "https://www.linkedin.com/in/anshika-kumari-b77798258/",
     iconSize: "2.8783rem",
   },
   {
@@ -205,34 +212,12 @@ const people = [
     linkedinUrl: "https://www.linkedin.com/in/nawaid-sheikh/",
     iconSize: "2.8783rem",
   },
-  {
-    name: "Harsh Sharma",
-    role: "Backend Developer",
-    imageUrl: img2,
-    linkedinUrl: "https://www.linkedin.com/in/harsh-sharma/",
-    iconSize: "2.8783rem",
-  },
-  {
-    name: "Hrigved Mahule",
-    role: "Powertrain Member",
-    imageUrl: img3,
-    linkedinUrl: "https://www.linkedin.com/in/hrigved-mahule/",
-    iconSize: "2.8783rem",
-  },
-  {
-    name: "Pratik Gujrker",
-    role: "Aerodynamics Member",
-    imageUrl: img13,
-    linkedinUrl: "https://www.linkedin.com/in/pratik-gujrker/",
-    iconSize: "2.8783rem",
-  },
-  
 
   {
     name: "Khushi Khadgi",
     role: "Suspension Member",
     imageUrl: img6,
-    linkedinUrl: "https://www.linkedin.com/in/khushi-khadgi/",
+    linkedinUrl: "https://www.linkedin.com/in/khushi-khadgi-38384128a/",
     iconSize: "2.8783rem",
   },
 
@@ -240,44 +225,30 @@ const people = [
     name: "Mansvi Bagde",
     role: "Chassis member",
     imageUrl: img8,
-    linkedinUrl: "https://www.linkedin.com/in/mansvi-bagde/",
+    linkedinUrl: "https://www.linkedin.com/in/mansvi-bagde-5a07a527a/",
     iconSize: "2.8783rem",
   },
   {
     name: "Takshit Kombe",
     role: "Social Media Manager",
     imageUrl: img21,
-    linkedinUrl: "https://www.linkedin.com/in/takshit-kombe/",
-    iconSize: "2.8783rem",
-  },  
-  {
-    name: "Nishant Timane",
-    role: "Team Member",
-    imageUrl: img11,
-    linkedinUrl: "https://www.linkedin.com/in/nishant-timane/",
+    linkedinUrl: "https://www.linkedin.com/in/takshit-kombe-1b8633289/",
     iconSize: "2.8783rem",
   },
 
-  
   {
     name: "Prisha Taklikar",
     role: "Team Member",
     imageUrl: img15,
-    linkedinUrl: "https://www.linkedin.com/in/prisha-taklikar/",
+    linkedinUrl: "https://www.linkedin.com/in/prisha-taklikar-3aa7282ab/",
     iconSize: "2.8783rem",
   },
-  {
-    name: "Shantanu Fuke",
-    role: "Team Member",
-    imageUrl: img19,
-    linkedinUrl: "https://www.linkedin.com/in/shantanu-fuke/",
-    iconSize: "2.8783rem",
-  },
+
   {
     name: "Shrvan Kalode",
     role: "Team Member",
     imageUrl: img20,
-    linkedinUrl: "https://www.linkedin.com/in/shrvan-kalode/",
+    linkedinUrl: "https://www.linkedin.com/in/shrvan-kalode-50509328b/",
     iconSize: "2.8783rem",
   },
 
@@ -285,19 +256,17 @@ const people = [
     name: "Ishan Kumar",
     role: "Team Member",
     imageUrl: img4,
-    linkedinUrl: "https://www.linkedin.com/in/ishan-kumar/",
+    linkedinUrl: "https://www.linkedin.com/in/ishan-kumar-78440128b/",
     iconSize: "2.8783rem",
-  },  
-  
+  },
+
   {
     name: "Prajesh Kadbe",
     role: "Team Member",
     imageUrl: img43,
-    linkedinUrl: "https://www.linkedin.com/in/prajesh-kadbe/",
+    linkedinUrl: "https://www.linkedin.com/in/prajesh-kadbe-72a30b28b/",
     iconSize: "2.8783rem",
   },
-  
-  
 
   // More people...
 ];
@@ -307,75 +276,79 @@ const additionalPeople = [
     name: "Pratham Mendhe",
     role: "Budget Manager",
     imageUrl: img33,
-    linkedinUrl: "https://www.linkedin.com/company/the-elite-racers/",
+    linkedinUrl: "https://www.linkedin.com/in/pratham-mendhe-41b66724a/",
     iconSize: "2.8783rem",
   },
   {
     name: "Ninad Manekar",
     role: "Vice Chairperson",
     imageUrl: img24,
+    linkedinUrl:
+      "https://www.linkedin.com/in/ninad-prashantrao-manekar-1bb0bb231/",
+    iconSize: "2.8783rem",
   },
   {
     name: "Ashuket Khakre",
     role: "CAE Lead",
     imageUrl: img35,
-    linkedinUrl: "https://www.linkedin.com/company/the-elite-racers/",
+    linkedinUrl: "https://www.linkedin.com/in/ashuket-khakre-50767722a/",
     iconSize: "2.8783rem",
   },
   {
     name: "Abhishek Padghan",
     role: "Soical Media Manager",
     imageUrl: img45,
-    linkedinUrl: "https://www.linkedin.com/company/the-elite-racers/",
+    linkedinUrl:
+      "https://www.linkedin.com/in/abhishek-prakash-padghan-45b815205/",
     iconSize: "2.8783rem",
   },
   {
     name: "Chetan Akhand",
     role: "Talent Scout",
     imageUrl: img37,
-    linkedinUrl: "https://www.linkedin.com/company/the-elite-racers/",
+    linkedinUrl: "https://www.linkedin.com/in/chetan-akhand-779a77235/",
     iconSize: "2.8783rem",
   },
   {
     name: "Rohan Yedelloo",
     role: "Test Engineer",
-    imageUrl: img37,
-    linkedinUrl: "https://www.linkedin.com/company/the-elite-racers/",
+    imageUrl: img38,
+    linkedinUrl: "https://www.linkedin.com/in/rohan-yedelloo-142a65224/",
     iconSize: "2.8783rem",
   },
   {
     name: "Md. Nawaid Sheikh",
     role: "UI/UX Designer",
     imageUrl: img10,
-    linkedinUrl: "https://www.linkedin.com/company/the-elite-racers/",
+    linkedinUrl: "https://www.linkedin.com/in/nawaid-sheikh/",
     iconSize: "2.8783rem",
   },
   {
     name: "Pratik Shende",
     role: "Aero Specialist",
     imageUrl: img14,
-    linkedinUrl: "https://www.linkedin.com/in/pratik-shende/",
+    linkedinUrl: "https://www.linkedin.com/in/pratik-shende-110111277/",
     iconSize: "2.8783rem",
   },
   {
     name: "Amit Rahangdale",
     role: "Aero Lead",
     imageUrl: img40,
-    linkedinUrl: "https://www.linkedin.com/company/the-elite-racers/",
+    linkedinUrl: "https://www.linkedin.com/in/amit-rahangdale-968baa224/",
     iconSize: "2.8783rem",
   },
   {
     name: "Kunal Kadak",
     role: "Suspension Lead",
     imageUrl: img41,
-    linkedinUrl: "https://www.linkedin.com/company/the-elite-racers/",
+    linkedinUrl: "https://www.linkedin.com/in/kunal-kadak-669289238/",
     iconSize: "2.8783rem",
   },
   {
     name: "Rishik Nichat",
     role: "MFG Lead",
     imageUrl: img44,
-    linkedinUrl: "https://www.linkedin.com/company/the-elite-racers/",
+    linkedinUrl: "https://www.linkedin.com/in/n-rishik/",
     iconSize: "2.8783rem",
   },
 ];
@@ -385,7 +358,7 @@ const facultyAdvisors = [
     name: "Dr. Harish Bhatkulkar",
     role: "Head of Department",
     imageUrl: img25,
-    linkedinUrl: "https://www.linkedin.com/in/faizal-hussen/",
+    linkedinUrl: "https://www.linkedin.com/in/dr-harish-bhatkulkar-7607541a9/",
     iconSize: "2.8783rem",
   },
   {
@@ -424,7 +397,7 @@ const saeTeamMembers = [
     linkedinUrl: "https://www.linkedin.com/in/rani-shende/",
     iconSize: "2.8783rem",
   },
-  
+
   {
     name: "Rohan Yedelloo",
     role: "Test Engineer",
