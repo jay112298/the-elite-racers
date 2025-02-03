@@ -17,6 +17,7 @@ import Bangal from "./bangal.png";
 import Rehman from "./Rehman.png";
 import Shende from "./Shende.png";
 import Green from "./Green.png";
+import Donate from "./donate.png";
 
 const ScrollContainer = styled.div`
   position: relative;
@@ -119,6 +120,22 @@ const PartnerName = styled.p`
   text-align: center;
   margin-top: 0.5rem;
   font-family: "Inter", sans-serif;
+`;
+
+const SupportImageContainer = styled.div`
+  width: 100%;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
 `;
 
 const Partners = () => {
@@ -244,6 +261,14 @@ const Partners = () => {
             SUPPORT OUR TEAM
           </Button>
         </MessageContainer>
+        <SupportImageContainer
+          as={motion.div}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+        >
+          <img src={Donate} alt="Support Our Racing Team" loading="lazy" />
+        </SupportImageContainer>
       </PartnersContainer>
       <Footer />
     </>
