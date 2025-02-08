@@ -272,7 +272,7 @@ const styles = {
   },
   teamImage: {
     width: "228px",
-    height: "129px",
+    height: "139px",
     objectFit: "cover",
   },
 };

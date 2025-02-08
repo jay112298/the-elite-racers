@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import Star from "../../assets/home/plus-star.svg";
 import styles from "./Recruitments.st.js";
 import EliteLogo from "../../assets/elite-logo.svg";
-import Crew from "../../assets/crew.png";
+import Crew from "../../assets/crew2.png";
 import Vector from "../../assets/vector.svg";
 import Navbar from "../../components/Navbar/Navbar";
 
