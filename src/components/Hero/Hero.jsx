@@ -32,52 +32,52 @@ export default function Hero() {
   };
 
   return (
-    <HeroWrap blob1={Blob1} blob2={Blob2} x={X}>
-      <nav className="flex justify-center">
-        <div className="nav flex">
-          {navigation.slice(0, 3).map((navComp) => (
-            <div key={navComp.name} className="nav-links">
-              <a href={navComp.href}>{navComp.name}</a>
-            </div>
-          ))}
-        </div>
-        <div className="logo" onClick={handleLogoClick}>
-          <img src={EliteLogo} />
-        </div>
-        <div className="nav flex">
-          {navigation.slice(3).map((navComp) => (
-            <div key={navComp.name} className="nav-links">
-              <a href={navComp.href}>{navComp.name}</a>
-            </div>
-          ))}
-        </div>
-      </nav>
-      <div className="hero-content flex flex-col items-center justify-center">
-        <div className="top flex flex-col items-center">
-          <div className="left">
-            <div className="title">Welcome to the world of FSAE</div>
-            <div className="body">
-              <div className="shape"></div>
-              <div className="text">
-                This is the offical website of <span>The Elite Racers</span>{" "}
-                where you can find out our progress of FSAE standings,open
-                recruitments and much more.
+      <HeroWrap blob1={Blob1} blob2={Blob2} x={X}>
+        <nav className="flex justify-center">
+          <div className="nav flex">
+            {navigation.slice(0, 3).map((navComp) => (
+                <div key={navComp.name} className="nav-links">
+                  <a href={navComp.href}>{navComp.name}</a>
+                </div>
+            ))}
+          </div>
+          <div className="logo" onClick={handleLogoClick}>
+            <img src={EliteLogo} />
+          </div>
+          <div className="nav flex">
+            {navigation.slice(3).map((navComp) => (
+                <div key={navComp.name} className="nav-links">
+                  <a href={navComp.href}>{navComp.name}</a>
+                </div>
+            ))}
+          </div>
+        </nav>
+        <div className="hero-content flex flex-col items-center justify-center">
+          <div className="top flex flex-col items-center">
+            <div className="left">
+              <div className="title">Welcome to the world of FSAE</div>
+              <div className="body">
+                <div className="shape"></div>
+                <div className="text">
+                  This is the offical website of <span>The Elite Racers</span>{" "}
+                  where you can find out our progress of FSAE standings,open
+                  recruitments and much more.
+                </div>
               </div>
+              <button className="explore-btn" onClick={handleExploreClick}>
+                Explore More
+                <img src={arrow} alt="" />
+              </button>
             </div>
-            <button className="explore-btn" onClick={handleExploreClick}>
-              Explore More
-              <img src={arrow} alt="" />
-            </button>
+            <div className="line"></div>
+            <div className="right">
+              <span>Drive</span> like you stole it.
+            </div>
           </div>
-          <div className="line"></div>
-          <div className="right">
-            <span>Drive</span> like you stole it.
+          <div className="car-img">
+            <img src={heroCar} alt="" />
           </div>
         </div>
-        <div className="car-img">
-          <img src={heroCar} alt="" />
-        </div>
-      </div>
-    </HeroWrap>
+      </HeroWrap>
   );
 }
